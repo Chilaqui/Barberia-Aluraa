@@ -1,0 +1,108 @@
+<!-- HTML5 -->
+<!DOCTYPE html> 
+
+<!-- Esto es para que todos los navegadores sepan que se esta escriviendo en el lenguaje español -->
+<html lang="es">
+  
+    <head>
+        <!-- Diccionario de los idionas indoEuropeos -->
+        <meta charset="UTF-8">
+        <!-- Adaptar nuestra pagina a celulares-->
+        <meta name="viewport" content="width=divice-width">
+        <title>Barberia Alura</title>
+        <!-- Aqui damos el nombre del documento de CSS que queremos que modifique todo este hipertexto con su respectivo reseteo -->
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <!-- Link con que se hace el cambio de letra -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    </head>
+
+    <body>
+
+        <header>
+            <div class="caja">
+                 <h1><img src="imagenes/logo.png" alt=""></h1>
+                  <nav>
+                     <ul>
+                         <li><a href="index.html">Home</a></li>
+                         <li><a href="productos.html">Productos</a></li>
+                         <li><a href="contacto.html">Contacto</a></li>
+                     </ul>
+                  </nav>
+            </div>
+             
+         </header>
+
+
+        <!-- Aqui se abre un link para poder colocar la imagen con el id para poder modificarlo en el CSS -->
+        <img class="banner" src="banner/banner.jpg" alt=""> 
+        
+        <main>
+            
+            <!-- Se crea la clase de este parrafo para poder ponerle diseño -->
+            <section class="principal">
+                <h2 class="titulo_principal">Sobre la Barbería Alura</h2> 
+                <img src="imagenes/utensilios[1].jpg" alt="Imagen de los utensilios de un barbero" class="utensilios">
+                <p >Ubicada en el corazón de la ciudad, la <strong>Barbería Alura</strong>  trae para el mercado lo que hay de mejor para su 
+                cabello y barba. Fundada en 2020, la Barbería Alura ya es destaque en la ciudad y conquista nuevos clientes diariamente.</p> 
+        
+                <!-- Aqui se coloca otro Id para poder modificar la mision de color y de tamaño -->
+                <p id="mision"><em>Nuestra misión es: <strong>"Proporcionar autoestima y calidad de vida a nuestros clientes".</strong></em></p> 
+
+                <p >Ofrecemos profesionales experimentados que están constantemente observando los cambios y movimiento en el
+                 mundo de la moda, para así ofrecer a nuestros clientes las últimas tendencias. El atendimiento posee un
+                padrón de excelencia y agilidad, garantizando calidad y satisfacción de nuestros clientes. </p>
+            </section>
+            
+            <section class="mapa">
+                <h3 class="titulo_principal">Nuestra Ubicacion</h3>
+                <p>Nuestra establecimiento está ubicado en el corazón de la ciudad</p>
+                
+                <div class="mapa-contenido">
+                    <!-- para poner links ya sean mapas o videos -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.4079777269444!2d-46.637213025712484!3d-23.589697062631846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5bd9bb943bf5%3A0x6f642995c970f0fe!2scaelum%20alura!5e0!3m2!1ses-419!2smx!4v1710320525271!5m2!1ses-419!2smx" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+            </section>
+
+            <!-- Se crea la clase para poder ponerle diseño a el parrafo -->
+            <section class="diferenciales">
+                <h3 class="titulo_principal">Diferenciales</h3>
+                
+                <div class="contenido-diferenciales">
+                    <!-- Creacion de lista -->
+                    <ul class="lista-diferenciales">
+                        <!-- Se crean clases para que sea mas facil mejorar el editado de CSS -->
+                        <li class="items">Atención personalizada a los clientes</li>
+                        <li class="items">Espacio diferenciado</li>
+                        <li class="items">Localizacion</li>
+                        <li class="items">Profecionales calificados</li>
+                        <li class="items">Puntualidad</li>
+                        <li class="items">Limpieza</li>
+                    </ul><img  src="banner/diferenciales/diferenciales.jpg" class="img_diferenciales">
+                    <!-- Agregamos la imagen que coresponde con la de difernciale con su respectivo id para mejor la anchura de la imagen -->
+                </div>
+
+                <div class="video">
+                    <iframe  width="100%" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY?si=Zpf-wUSnkXN-qVt7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+
+            </section>
+            
+            
+
+        </main>
+
+        
+        
+
+
+        <footer>
+            <img src="imagenes/logo-blanco.png" alt="">
+            <p class="Copyrigth">&copy Copyrigth Barberia Alura-2020</p>
+        </footer>
+        
+    </body>
+     
+     
+</html>

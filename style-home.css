@@ -1,0 +1,71 @@
+body{
+    background-color: #ffffff;/*background-color: paleturquoise; /*Este es para cambiar el color de todo el cuerpo de la pagina */
+}
+
+header{
+    
+    background-color: white; /*Color del encabezado en color plata*/
+    padding: 20px 0;/*Margen de los bordes de arriba*/
+}
+
+
+.titulo_principal{
+    padding-left: 30px;
+    display: inline-block;
+}
+
+/* creacion de la clase para todos los h2 y h3 */
+.titulo_centralizado{
+    text-align: center;
+}
+
+#banner{/*Se crea el id para que el sistema sepa que parte es la que se tiene que modificar*/
+    width: 100%; /*Este te permite tener la imagen en la anchura adecuada a la computadora o el celular*/
+}
+
+.principal{
+    background-color: #cccccc; /*Se cambia el color del parrafo principal a plateado*/
+    padding: 50px; /*Deja un espacio en la parte inferior de la clase*/
+}
+
+/*h2{
+    text-align: center; /*Este es para alinear todo el texto de centrado
+
+} */
+
+p{
+    text-align: center;/*Este es para alinear todo el texto centrado*/
+}
+
+em strong{
+    color: red; /*Cambia el color de las letras selccionadas*/
+}
+
+#mision{
+    font-size: 20px;/*Cambia el tamaño de las letras con el el ID seleccionado para tener un mejor direccionamietno de lo que vamos a modificar*/
+}
+
+.diferenciales{
+    background-color: #ffffff;/*Se cambia el color de el cuadro de los difernciales*/
+    padding: 30px;
+}
+
+/*h3{
+    text-align: center;/*Aline el texto al centro 
+}*/
+
+.items{
+    font-style: italic;  /*Cambio de fuente de letra*/
+}
+
+ul{
+    display: inline-block; /*Se reacomodo todo lo de las listas a modo que la imagen pueda caber ahi*/
+    vertical-align: top; /*Se alinea el texto hasta arriba de la imagen*/
+    width: 20%; /*Se le da un tamaño a las listas*/
+    margin-right: 25%;/* se le da un tamaño a la lista para que separe la imagen*/
+}
+
+#img_diferenciales{
+    width: 50%; /*se cambia el tamaño de la imagen*/
+}
+

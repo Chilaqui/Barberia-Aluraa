@@ -1,0 +1,300 @@
+/*Cambio de tipo de letra con el link*/
+body{
+    font-family: "Montserrat", sans-serif;
+}
+
+header{
+    background-color: #BBBBBB; /*Color del encabezado en color plata*/
+    padding: 20px 0;/*Margen de los bordes de arriba*/
+}
+
+.caja{
+    width: 940px;/*Tamaño que tiene de distacia*/
+    position: relative;
+    margin: 0 auto; /*marigin para la distancia de los lados sea igual*/
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 100px;
+}
+
+nav li{
+    display: inline; /*Pone las letras en una sola linea para que quede como navecion*/
+    margin: 0 0 0 15px; /* Se le pone un unargen en sus cuatro lados el cual solo lo pusimos de un lado*/
+}
+
+nav a{
+    text-transform: uppercase;/*Cambia la letra de minuscula a mayuscula*/
+    color: black;/*Color de letra*/
+    font-weight: bold; /*Pone en negritas las letras*/
+    font-size: 22px; /*Cambia el tamño de las letras*/
+    text-decoration: none;/*Elimina las decoraciones de subrayado*/
+}
+
+nav a:hover{/*Evento del puntero cuando pasa sobre el*/
+    color: #c78c19;/*Cambia el color cuando el cursos pasa sobre el*/
+    text-decoration: underline;/*Subraya cuando el cursor pasa sobre el*/
+}
+
+.productos{
+    width: 940px; /*Margen*/
+    margin: 0 auto;/*Margen igualitario de los lados*/
+    padding: 50px;/*Margen entre en encabezado y la lista*/
+}
+
+.productos li{
+    display: inline-block; /*Vuleve */
+    text-align: center;/*Aliniacion del tecto de los productos centralizado*/
+    width: 30%; /*30% de espacio entre los productos*/
+    vertical-align: top;/**/
+    /*background-color: #cccccc;*/ /*Este solo nos ayudo a poder tener bien configurada la caja*/
+    margin: 0 1.5%;/*Margen entre los elementos externos*/
+    padding: 30px 20px; /*El elemento aumenta su tamaño*/
+    box-sizing: border-box;/*El espacio de la caja que estba ocupando los 940px los auto ajustara en el 30% de los espcios de los productos*/
+
+    border-color: #000000;/*Color del borde*/
+    border-width: 2px;/*Tamaño del borde*/
+    border-style: solid;/*Hace el el borde sea solido se puede camviar pero cambia el diseño de la linea*/
+    /*  border: 2px solid #000000;    Esto queda de un manera mas facil pero es necesario acomodarlo asi*/
+    border-radius: 10px; /*Hace el borde de las esquinas*/
+   
+}
+
+.productos li:hover{/*Evento del maus cuando pasa sobre el*/
+    border-color: #c78c19; /*Color que se hace ver cuando el puntero pasa sobre el*/
+}
+
+.productos li:active{/*Evento cuando das clic al maus*/
+    border-color: #088c19;
+}
+
+.productos h2{
+    font-size: 30px;/*Tamaño de la letra de los productos*/
+    font-weight: bold; /*Peso de las letras en negrita*/
+}
+
+.productos li:hover h2{
+    font-size: 33px;
+}
+
+.productoDescripcion{
+    font-size: 18px;/*Tamaño de la letra*/
+
+}
+
+.productoPrecio{
+    font-size: 25px;/*Tamaño de la letra*/
+    font-weight: bold; /*Peso de la letra en negrita*/
+}
+
+footer{
+    text-align: center;/*Tecto alineado al centro*/
+    background: url(imagenes/bg.jpg);/*Manera en la que direccionas una imagen en CSS*/
+    padding: 20px;/*Tamaño de la imagen */
+}
+
+.Copyrigth{
+    color: #ffffff; /*Color de las letras de el copy*/
+    font-size: 13px;/*Tamaño de las letras de el copy*/
+    margin: 20px;/*margen de separacion de el copy*/
+}
+
+.centralizados{
+    margin: 0 150px;
+}
+
+form{
+    margin: 40px 0; /*Separa el formulario de la cabeza y de el footer*/
+    
+}
+
+form label, form legend{/*Se pudes reusar poniendo una coma en en el selector*/
+    display: block;/*Hace que los cuadros y su descripcion se hagan en escalera*/
+    font-size: 20px;/*Cambia el taño de las letras para que se vean de una mejor forma*/
+    margin: 0 0 10px;/*Separa un poco su descripcion con el cuadro*/
+    
+}
+
+.input-padron{
+    display: block;/*Solo aplica a las compos de nombre telefono y correo*/
+    margin:  0 0 20px;/*Separa los inputs de la descripcion*/
+    padding: 10px 20px;
+    width: 50%; /*Espacio que ocupa del espacio declarado que este caso era de 940px*/
+}
+
+.checkbox{
+    margin:20px 0;/*Espacio que ocupa el cuadro en el inferior y superior y de los costados 0 de le gustaria recibir */
+}
+
+.enviar{
+    width: 40%;/*Prcentaje del lo que el boton ocupara dentro de los 940px*/
+    padding: 15px 0;/*Tamaño del botton*/
+    font-size: 18px; /*Tamaño de la letra en que se ve */
+    font-weight: bold; /*Hace las letritas mas negras o se podria decir mas gorditas o pesadas*/
+    color: white;/*Color que se le pone a las letras del boton*/
+    background: orange; /*Color de el boton que se le cambio especialmente a las cajas*/
+    border: none; /*Elomina los bordes en negros ya que se veian feos*/
+    border-radius: 5px;/*Radio de las vertices de el boton*/
+    transition: 1s all; /*Esta es la demora en que que cambia de color el botton cuando quieres seleccionar el boton*/
+    cursor: pointer; /*Cambia a la manita el cursos*/
+}
+
+.enviar:hover{
+    background: orangered;/*Evento que hace que cuando pase el maus por ensima, cambie su color*/
+    transform: scale(1.10); /*Se puedean aplicar varias cosas con transform ahora mismo solo hace el escalado del boton*/
+}
+
+table{
+    margin: 40px 40px; /*Margenes superior he inferior para nuestra tabla ya que estaba muy juntael boton de enviar formulario y el footer*/
+}
+
+thead{
+    background: #555555; /*Color de la caja del encabezado de la tabla*/
+    color: white;/*Color de las letras del encabezado de la trabla*/
+    font-weight: bold; /*Peso de la letras del encabezado de la tabla*/
+}
+
+td,th{
+    border: 1px solid #000000; /*Configiracion de la tabla con el tamaño del borde color y que sea solido*/
+    padding: 8px 15px; /*Espaciamiento interno*/
+}
+
+/*CSS para nuestra home*/
+
+.banner{
+    width: 100%;
+}
+
+.principal{
+    padding: 3em;
+    background: #FEFEFE;
+}
+
+.titulo_principal{
+    text-align: center;/*Alineacion al centro*/
+    font-size: 2em;/*Tamaño de la letra respecto a lo adecuado seria esto un *2*/
+    margin: 0 0 1em;/*Margen colocado para el titulo*/
+    clear: left;/*Esto hace que borre todo lo que tiene o pueda tener a su izquierda*/
+}
+
+
+
+.titulo_principal:before{/*Poner un parentesis en el principio de un titulo*/
+    content: "[";
+}
+.titulo_principal:after{/*Poner el final del corchete al final de un titulo*/
+    content:  "]";
+}
+
+.titulo_principal::first-letter{/*Pseudocodigo para poner la primera letra del titulo en negrita*/
+    font-weight: bold;
+}
+
+p::first-line{/*Pseudocodigo para pmer el primer parrafo en italic*/
+    font-style: italic;
+}
+
+.principal p{
+    margin: 0 0 1em;
+}
+
+.principal strong{
+    font-weight: bold;/*Poner en negrita un texto en espesifico*/
+}
+
+.principal em{
+    font-style: italic;
+    width: 940px;/*se hace sabiendo que los pixeles en una pantalla ban de eso*/
+    margin: 0 auto;/*Esto se hace sabiendo que es como un estandar tanto con el width como el margin*/
+}
+
+.img_diferenciales{
+    width: 60%; /*Tamaño de la imagen de diferenciales*/
+    transition: 400ms;/*Transicion en milisegundos*/
+    box-shadow: 10px 10px 20px 15px #000000; /*Poner sombra a la imagen dependiendo a las manesillas del reloj el terceo es difuminado y el tercero es la expacion del difuminado*/
+}
+
+.img_diferenciales:hover{/*efecto visual de la opasidad cuando pase el cursos*/
+    opacity: 0.3;
+}
+
+.mapa{
+    padding: 3em 0; /*Espacio del mapa con respecto a lo demas*/
+    background: linear-gradient(#FEFEFE, #888888);
+    background: radial-gradient(20deg);/*Opciones a diferentes degradados*/
+    background: linear-gradient(90deg,);/*Otra opcion a otro degradado*/
+}
+
+.mapa p{
+    margin: 0 0 2em; /*Tamaño del margen del texto del mapa*/
+    text-align: center; /*Alineacion del texto del mapa */
+
+}
+
+.mapa-contenido{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.diferenciales{
+    padding: 3em;
+    background: #888888;
+}
+
+.contenido-diferenciales{
+    width: 640px;
+    margin: 0 auto;/*Margen del contenido de diferenciales y automatico respecto a los laterales*/
+}
+
+.lista-diferenciales{
+    width: 40%;/*Tamaño de las listas de diferenciales*/
+    display: inline-block;/*Coloca la imagen de lado del texto pero con la condicion de que en html este sin dejar saltos*/
+    vertical-align: top; /*Sube la lista de los diferenciales a lado superior*/
+}
+
+.items{
+    line-height: 1.5;/*Separamos las lineas de las lista un espacio con las clases que ya estaba declarada como items*/
+}
+
+.items:before{/*Poner un parentesis en el principio de un titulo*/
+    content: "✯";
+}
+
+.items:first-child{ /*pseudoclase donde el primer hijo le hace todas las modificaciones*/
+    font-weight: bold; /*Se pinta de negrito jajaja*/
+}
+
+.utensilios{
+    width: 120px; /*Tamaño de la imagen*/
+    float: left; /*Hace que los textos se coloquen de lado izquierdo de la imagen */
+    margin: 0 20px 20px 0;
+}
+
+.video{
+    width: 560px;/*Tamaño del video en el documento*/
+    margin: 1em auto;/*Margen del video respecto abajo y arriba y automatico en los costados*/
+}
+
+@media screen and(max-width:480px) {
+
+    .caja h1{
+        text-align: center;
+    }
+
+    nav{
+        position: static;
+    }
+
+
+    .caja, .principal, .mapa, .diferenciales, .video{
+        width: auto;
+    }
+
+    .lista-diferenciales, .img_diferenciales{
+
+        width: 100%;
+
+    }
+}
